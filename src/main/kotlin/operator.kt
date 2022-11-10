@@ -85,15 +85,24 @@ fun main() {
 
     var angka = arrayOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
     for(i in angka){
-        println(i)
+        print("$i ")
     }
-    print("")
-    print("")
+    println(" sebuah array nilai 1 - 10, Menggunakan perulangan for")
+    var a = arrayOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+    var d = 0
+    for(i in a){
+        d = d + i
+        print("$d ")
+    }
+    println(" jumlah satu persatu arraynya menggunakan perulangan for")
+
     var i = 1
     while (i <= 10) {
-        println(i )
+        print("$i ")
         i++
     }
+    println(" sebuah array nilai 1 - 10, Menggunakan perulangan While")
+
 
     for(i in 5 downTo 1){
         for (j in 1 ..  i){
@@ -108,6 +117,32 @@ fun main() {
         }
         println()
     }
+
+    var b = "*"
+    for(i in b){
+        for (j in 1..5 ){
+            print("$i ")
+        }
+        println()
+    }
+
+//    for( b in 1..5){
+//        if(b == 1){
+//            print("*")
+//        }else if(b == 2){
+//            print(2)
+//        }else if(b == 3){
+//            print(3)
+//        }else if(b == 4){
+//            print(4)
+//        }else{
+//            print("*")
+//        }
+//        for (b in 1..4 ){
+//            print("$b ")
+//        }
+//        println(b)
+//    }
 
 
 }
