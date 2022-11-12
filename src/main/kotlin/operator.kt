@@ -111,6 +111,7 @@ fun main() {
     }
     println(" jumlah satu persatu arraynya menggunakan perulangan while")
 
+    println()
 
     for(i in 5 downTo 1){
         for (j in 1 ..  i){
@@ -119,12 +120,16 @@ fun main() {
         println()
     }
 
+    println()
+
     for(i in 1..5){
         for (j in 1..4 ){
             print("$i ")
         }
         println()
     }
+
+    println()
 
     var awal = 1
     var akhir = 5
@@ -141,9 +146,35 @@ fun main() {
         akhir = akhir - 1
     }
 
-    for (i in 1 .. 4) {
+    println()
+    for (i in 1 .. 5) {
+        for(j in 1..5){
+            if ( i == j || i + j == 6){
+                print("* ")
+            } else {
+                print("$j ")
+            }
+        }
+        println()
+    }
+
+    println()
+
+    for (i in 1 .. 5) {
         for(j in 1..5){
             if ( i == 1 || j == 1 || j == 5 || i == 4){
+                print("* ")
+            } else {
+                print("$j ")
+            }
+        }
+        println()
+    }
+
+    println()
+    for (i in 1 .. 5) {
+        for(j in 1..5){
+            if ( i == 1 || j == 1 || i == 5 || j == 5){
                 print("* ")
             } else {
                 print("$j ")
