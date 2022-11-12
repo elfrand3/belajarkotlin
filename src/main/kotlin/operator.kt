@@ -78,17 +78,16 @@ fun main() {
      * D. * * * * *
      *    * 2 3 4 *
      *    * 2 3 4 *
-     *    * 2 3 4 *
      *    * * * * *
      *
      */
 
-    var angka = arrayOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+    val angka = arrayOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
     for(i in angka){
         print("$i ")
     }
     println(" sebuah array nilai 1 - 10, Menggunakan perulangan for")
-    var a = arrayOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+    val a = arrayOf(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
     var d = 0
     for(i in a){
         d = d + i
@@ -96,12 +95,21 @@ fun main() {
     }
     println(" jumlah satu persatu arraynya menggunakan perulangan for")
 
-    var i = 1
-    while (i <= 10) {
-        print("$i ")
-        i++
+    var o = 1
+    while (o <= 10) {
+        print("$o ")
+        o++
     }
     println(" sebuah array nilai 1 - 10, Menggunakan perulangan While")
+
+    var i = 1
+    var k = 0
+    while (i <= 10) {
+        k = k + i
+        print("$k ")
+        i++
+    }
+    println(" jumlah satu persatu arraynya menggunakan perulangan while")
 
 
     for(i in 5 downTo 1){
@@ -118,13 +126,59 @@ fun main() {
         println()
     }
 
-    var b = "*"
-    for(i in b){
-        for (j in 1..5 ){
-            print("$i ")
+    var awal = 1
+    var akhir = 5
+    for (i in 1 .. 5) {
+        for(j in 1..5){
+            if (j == awal || j == akhir){
+                print("* ")
+            } else {
+                print("$j ")
+            }
+        }
+        println()
+        awal = awal + 1
+        akhir = akhir - 1
+    }
+
+    for (i in 1 .. 4) {
+        for(j in 1..5){
+            if ( i == 1 || j == 1 || j == 5 || i == 4){
+                print("* ")
+            } else {
+                print("$j ")
+            }
         }
         println()
     }
+
+//    val k = arrayOf(1,2,3,4,5)
+//    val b = "*"
+//    for(i in k ){
+//        for (j in 1..4 ){
+//            print("$i ")
+//        }
+//        println()
+//    }
+//
+//    val l = "^"
+//    for(i in l ){
+//        for (j in 1..5 ){
+//            print("$i ")
+//        }
+//        println()
+//    }
+//
+//    val g = "*"
+//    for(i in g ){
+//        for (h in 1..5 ){
+//            for (h in 1..5 ){
+//                print("$i ")
+//            }
+//            println()
+//        }
+//        println()
+//    }
 
 //    for( b in 1..5){
 //        if(b == 1){
